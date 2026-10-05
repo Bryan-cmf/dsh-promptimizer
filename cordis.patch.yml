@@ -1,0 +1,10 @@
+# dsh-promptimizer bundle patch
+#
+# Install through the official CLI — the command reconciles dsh.profile.bundles
+# against installed packages and appends this bundle; this patch inserts the
+# single loader row. Double-mount guard follows the dsh-better-sidebar
+# convention: back off when another enabled entry already mounts this package.
+- insert:
+    - id: promptimizer
+      name: 'dsh-promptimizer'
+      disabled: !!js "[...ctx.loader.entries()].some((e) => e.options.name === 'dsh-promptimizer' && e.options.id !== 'promptimizer' && !e.disabled)"
