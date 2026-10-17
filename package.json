@@ -1,6 +1,6 @@
 {
   "name": "dsh-promptimizer",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Prompt optimizer for DeepSeek Harness (DSH): one click rewrites your prompt into a professional spec using the CURRENTLY SELECTED model — Light / Standard / Deep strengths, streaming, Esc-cancel, zh/en UI. Works with any OpenAI-compatible endpoint.",
   "type": "module",
   "license": "MIT",
@@ -8,12 +8,21 @@
     "type": "git",
     "url": "https://github.com/Bryan-cmf/dsh-promptimizer"
   },
+  "engines": {
+    "dsh": ">=0.2.1-rc.2"
+  },
   "main": "lib/index.js",
   "exports": {
     ".": "./lib/index.js",
     "./client": "./lib/client.js",
     "./package.json": "./package.json"
   },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"
@@ -25,5 +34,11 @@
     },
     "manifestVersion": 1
   },
-  "keywords": ["dsh", "deepseek-harness", "prompt", "optimizer", "plugin"]
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "prompt",
+    "optimizer",
+    "plugin"
+  ]
 }

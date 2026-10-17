@@ -27,9 +27,9 @@ dsh plugin --profile <name> add github:Bryan-cmf/dsh-promptimizer
 dsh plugin --profile <name> add /path/to/dsh-promptimizer
 ```
 
-First use: **right-click the ✨ button** to set your endpoint + API key (stored in your browser's localStorage only).
+First use: **right-click the ✨ button** (or the menu's 🔑 item) to open the settings panel — endpoint, API key, and an optional model override (empty = always follow the session's currently selected model). Stored in your browser's localStorage only.
 
-首次使用：**右鍵 ✨ 按鈕**設定端點與 API key（只存在瀏覽器 localStorage）。
+首次使用：**右鍵 ✨ 按鈕**（或選單裡的 🔑 項）打開設定面板——端點、API key、可選的模型覆寫（留空 = 永遠跟隨 session 當前選中的模型）。只存在瀏覽器 localStorage。
 
 ## Verified against / 已驗證
 
