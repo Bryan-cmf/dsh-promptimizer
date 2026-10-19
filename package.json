@@ -1,6 +1,6 @@
 {
   "name": "dsh-promptimizer",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Prompt optimizer for DeepSeek Harness (DSH): one click rewrites your prompt into a professional spec using the CURRENTLY SELECTED model — Light / Standard / Deep strengths, streaming, Esc-cancel, zh/en UI. Works with any OpenAI-compatible endpoint.",
   "type": "module",
   "license": "MIT",
